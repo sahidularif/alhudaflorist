@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Tangerine:wght@400;700&display=swap');
+body{
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url(https://roisin.qodeinteractive.com/wp-content/uploads/2020/02/grid-home-page-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #1b745e;
+  background-color: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+.grandiflora-one-regular {
+  font-family: "Tangerine";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+}
+.tangerine-regular {
+  font-family: "Tangerine";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine";
+  font-weight: 700;
+  font-style: bold;
+}
+.parisienne-regular {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+  
+  .swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .swiper-slide .title {
+    font-size: 61px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 80px;
+    font-weight: bolder;
+  }
+  
+  .swiper-slide .subtitle {
+    font-size: 21px;
+  }
+  
+  .swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+  }
+  .center-div {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(10%, -50%);
+    width: 50%;
+    height: 50%;
+  }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    color: #FAFAD2;
+    opacity: .5;
+  }
+  @media only screen and (max-width: 600px) {
+    .swiper-slide .title {
+      font-size: 100px;
+      font-weight: 600;
+      letter-spacing: 5px;
+      line-height: 80px;
+    }
+  }
+
+/* Not Found Page */
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 560px;
+  width: 100%;
+  padding-left: 160px;
+  line-height: 1.1;
+}
+
+.notfound .notfound-404 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  background-image: url('/emoji.png');
+  background-size: cover;
+}
+
+.notfound .notfound-404:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(2.4);
+      -ms-transform: scale(2.4);
+          transform: scale(2.4);
+  border-radius: 50%;
+  background-color: #f2f5f8;
+  z-index: -1;
+}
+
+.notfound h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #151723;
+  text-transform: uppercase;
+}
+
+.notfound h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  color: #151723;
+}
+
+.notfound p {
+  font-family: 'Nunito', sans-serif;
+  color: #999fa5;
+  font-weight: 400;
+}
+
+.notfound a {
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #388dbc;
+}
+
+@media only screen and (max-width: 767px) {
+  .notfound .notfound-404 {
+    width: 110px;
+    height: 110px;
+  }
+  .notfound {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 110px;
+  }
+}
